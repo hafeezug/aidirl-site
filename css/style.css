@@ -403,9 +403,10 @@ section.alt { background: var(--paper-dim); }
 .team-role { font-family: var(--font-mono); font-size: 0.78rem; color: var(--teal-deep); text-transform: uppercase; letter-spacing: 0.04em; margin-bottom: 8px; }
 .team-lead p.bio { color: #445561; margin: 0; max-width: 60ch; }
 
-.student-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 22px; }
-@media (max-width: 900px) { .student-grid { grid-template-columns: repeat(3, 1fr); } }
-@media (max-width: 640px) { .student-grid { grid-template-columns: repeat(2, 1fr); } }
+.student-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 22px; }
+.student-card { flex: 0 1 calc(25% - 16.5px); min-width: 140px; }
+@media (max-width: 900px) { .student-card { flex-basis: calc(33.333% - 14.667px); } }
+@media (max-width: 640px) { .student-card { flex-basis: calc(50% - 11px); } }
 .student-card {
   background: var(--white);
   border: 1px solid var(--line);
