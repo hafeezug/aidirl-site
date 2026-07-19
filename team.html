@@ -10,6 +10,21 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="styleshe[...]
 <link rel="stylesheet" href="css/style.css">
+<style>
+  .brand-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+  
+  .brand-name {
+    font-weight: 700;
+  }
+  
+  .brand-subtitle {
+    font-size: 0.75rem;
+  }
+</style>
 </head>
 <body>
 
@@ -21,7 +36,10 @@
         <path d="M4 18c4-4 8 4 12 0s8-4 12 0" stroke="#C2872E" stroke-width="1.4" stroke-linecap="round" fill="none"/>
         <path d="M4 13c4-4 8 4 12 0s8-4 12 0" stroke="#35A996" stroke-width="1.4" stroke-linecap="round" fill="none" opacity="0.75"/>
       </svg>
-      <span>AIDIRL<br><small>Dept. of Computer Science · UG</small></span>
+      <div class="brand-text">
+        <span class="brand-name">AIDIRL</span>
+        <span class="brand-subtitle">Dept. of Computer Science · UG</span>
+      </div>
     </a>
     <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
